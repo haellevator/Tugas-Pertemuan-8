@@ -1,0 +1,701 @@
+/* ---------- Root Color Variables ---------- */
+:root {
+  --bg-color: #FCF5EE;
+  --text-color: #1B3C53;
+  --navbar-bg: #fff;
+  --link-color: #fff;
+  --link-hover: dodgerblue;
+  --dropdown-bg: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Global Styles ---------- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --bg-color: #262628;
+  --text-color: #d1d5db;
+  --navbar-bg: #1c2635;
+  --link-color: #d1d5db;
+  --link-hover: #60a5fa;
+  --dropdown-bg: #1f2937;
+  --shadow-color: rgba(224, 212, 212, 0.788);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background-color: #9AA6B2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.logo {
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  color: var(--link-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #01080f;
+}
+
+/* ---------- Dropdown Menu ---------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font: inherit;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgba(27, 60, 83, 0.66);
+  min-width: 180px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex-direction: column;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover > .dropdown-content {
+  visibility: visible;
+}
+
+.dropdown-content a {
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- Hero Section ---------- */
+.start {
+  color: #494f44;
+  background-size: cover;
+  padding: 60px 20px;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 30px 30px;
+  max-width: 600px;
+  margin: 100px auto 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(11, 36, 71, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-text:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(11, 36, 71, 0.25);
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  color: #0b2447;
+  margin-bottom: 0.6rem;
+}
+
+.hero-text p {
+  color: #1b3c53;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-desc {
+  font-style: italic;
+  font-size: 1rem;
+  color: #2a3c53;
+  margin-top: 10px;
+}
+
+
+/* ---------- Section Gap ---------- */
+.gap {
+  background-color: #cdcbcb;
+  min-height: 1vh;
+  padding: 0.5px;
+}
+
+.gap-text {
+  text-align: center;
+}
+
+/* ---------- Gallery Section ---------- */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 120px;
+  gap: 10px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.item {
+  background-color: #ffe6e6; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.6s ease;
+}
+
+.item1 {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item3 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item4 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item6 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item7 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item8 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.item9 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(231, 76, 60, 0.3);
+}
+
+.item:hover img {
+  transform: scale(1);
+}
+
+
+/* ---------- Playlist Section ---------- */
+/* ---------- 🎵 Playlist Section (Compact) ---------- */
+.playlist-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px 15px;
+  background: #f8f9fa82;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.playlist-section h2 {
+  font-size: 1.6rem;
+  color: #1f3b5c;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Grid: 3 per baris */
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  justify-items: center;
+}
+
+/* each song card */
+.playlist-section {
+  background-color: #e8edf358;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.playlist-title {
+  font-size: 2rem;
+  color: #1b3c53;
+  margin-bottom: 30px;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.song {
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.song img {
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.song h5 {
+  font-size: 0.9rem;
+  color: #1b3c53;
+  margin: 5px 0 10px;
+}
+
+.song audio {
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+
+
+.song:active {
+  transform: translateY(-2px);
+}
+
+/* ---------- 📱 Responsive ---------- */
+@media (max-width: 900px) {
+  .playlist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .playlist {
+    grid-template-columns: 1fr;
+  }
+
+  .song {
+    max-width: 85%;
+  }
+}
+
+
+/* ---------- Movie Recommendation Section ---------- */
+/* ---------- 🎥 Movie Section ---------- */
+.movie-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px 15px;
+  background: #f8f9fa76;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.movie-section h2 {
+  font-size: 1.6rem;
+  color: #1f3b5c;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* grid layout */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.movie {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #ffffffa4;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.movie img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.movie h3 {
+  font-size: 0.95rem;
+  color: #243a59;
+  padding: 10px 0 15px;
+  transition: color 0.3s ease;
+}
+
+/* ---------- ✨ Hover Effect (Simpel) ---------- */
+.movie:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  background-color: #eef3f98d;
+}
+
+.movie:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.movie:hover h3 {
+  color: #1f3b5c;
+}
+
+/* ---------- 📱 Responsive ---------- */
+@media (max-width: 900px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .movie {
+    max-width: 85%;
+  }
+}
+
+.socials {
+  background-color: #f0f4f800;
+  color: #1b3c53;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.socials h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1b3c53;
+}
+
+.socials p {
+  color: #435d74;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.social-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.social-icon img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 0.2rem;
+  background-color: rgb(174, 187, 203);
+  color: #61431b;
+  font-size: 1rem;
+  margin-top: auto;
+}
+
+/* ---------- Modal (Pop-up) ---------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.779);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background-color: rgb(226, 226, 226);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modal .close:hover {
+  color: #ff9eb7;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+#tombol-tutup {
+  padding: 8px 16px;
+  background-color: rgb(231, 221, 216);
+  color: rgb(17, 43, 43);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: #456882;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links > a,
+  .dropdown {
+    padding: 0.5rem;
+  }
+
+  .playlist {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.nav-links a.active {
+  color: #0b2447;
+  font-weight: bold;
+  border-bottom: 2px solid #0b2447;
+  transition: 0.3s ease;
+}
+
+.song audio::-webkit-media-controls-panel {
+  background-color: #f9fafc;
+  border-radius: 10px;
+}
+.song audio::-webkit-media-controls-play-button:hover {
+  filter: brightness(0.8);
+}
+
+/* ====================== GENERAL HOVER STYLE ====================== */
+a, button, .social-icon img, .movie-card, .song {
+  transition: all 0.3s ease;
+}
+
+/* ====================== LINK HOVER ====================== */
+.nav-links a:hover {
+  color: #0b2447;
+  text-shadow: 0 2px 6px rgba(11, 36, 71, 0.2);
+}
+
+/* ====================== SOCIAL ICON HOVER ====================== */
+.social-icon img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  background-color: #f9fafc;
+}
+
+/* ====================== SONG HOVER ====================== */
+.song {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  padding: 15px;
+}
+.song:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ====================== MOVIE CARD HOVER ====================== */
+.movie-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+/* ====================== BUTTON HOVER ====================== */
+button:hover, .dropbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ====================== IMAGE HOVER (Gallery / Moodboard) ====================== */
+.galeri img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeri img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}

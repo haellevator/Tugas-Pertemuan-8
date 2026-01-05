@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tugas8.css">
+    <title>Website Gen-Z Room</title>
+</head>
+<body>
+   <header class="navbar">
+        <div >
+            <img class="logo" src="https://i.pinimg.com/736x/63/9c/2a/639c2a6982e425b2af81e0072bcec459.jpg" width="70" height="70" alt="Logo">
+        </div>
+
+        <nav class="nav-links" id="navlinks">
+            <a href="#start">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn" aria-expanded="false" aria-controls="about-menu">About</button>
+                <div class="dropdown-content" id="about-menu">
+                    <a href="">Me</a>
+                    <a href="">Others</a>
+                </div>
+            </div>
+            <a href="#moodboard">Moodboard</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#movie">Movies</a>
+            <a href="#socials">Socials</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Tombol Dark dan Light">🌙</button>
+        </nav>
+        <button class="burger" id="burgerBtn" aria-label="Tombol Menu Mobile">≡</button>
+    </header>
+  
+
+    <section class="start" id="start">
+        <div class="hero-text">
+            <h2>Get to Know Me</h2>
+            <p>Here’s what my world looks like.</p>
+            <p class="hero-desc">
+      A collection of songs I love, movies that inspire me,  
+      and small pieces that define my vibe.  
+      Welcome to my little corner.
+    </p>
+        </div>
+    </section>
+
+    <section class="gap">
+      <h2 class="gap-text"></h2>
+    </section>
+
+    <section class="grid-gallery" id="moodboard">
+         <div class="galeri">
+      <div class="item item1"><img src="https://i.pinimg.com/1200x/62/2e/f6/622ef69b4b030a76eddc6809e8c6a042.jpg" alt=""></div>
+      <div class="item item2"><img src="https://i.pinimg.com/736x/e2/bf/04/e2bf04a87e041130f5fb77140ad38ee4.jpg" alt=""></div>
+      <div class="item item3"><img src="https://i.pinimg.com/736x/05/d9/68/05d968b050c2b25c0b3323ce8063993b.jpg" alt=""></div>
+      <div class="item item4"><img src="https://i.pinimg.com/736x/86/a8/d5/86a8d530dba8b758a1e5f3146ae4f684.jpg" alt=""></div>
+      <div class="item item5"><img src="https://i.pinimg.com/736x/5d/af/02/5daf02e845f281b8677a870f1483adad.jpg" alt=""></div>
+      <div class="item item6"><img src="https://i.pinimg.com/1200x/ab/f8/89/abf889b1f2780131dded1487ea5bb5df.jpg" alt=""></div>
+      <div class="item item7"><img src="https://i.pinimg.com/1200x/c8/d3/3a/c8d33ae90e021c67c559300ee99877cd.jpg" alt=""></div>
+      <div class="item item8"><img src="https://i.pinimg.com/1200x/97/36/b6/9736b644ec2a9035b0c18a5a13de5bea.jpg" alt=""></div>
+      <div class="item item9"><img src="https://i.pinimg.com/736x/2f/91/b0/2f91b0d623abca40a082737c28990527.jpg" alt=""></div>
+    </div>
+    </section>
+      <!-- Modal Pop-Up -->
+  <div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+    <section class="gap">
+      <h2 class="gap-text">Playlist Recently</h2>
+    </section>
+
+    <!-- Playlist Section -->
+<section id="playlist" class="playlist-section">
+  <div class="playlist">
+    <div class="song">
+      <img src="https://i.pinimg.com/1200x/cb/27/4e/cb274eccd2f54218507e5654f9316e7e.jpg" alt="">
+      <h5>Luna - The Smashing Pumpkins</h5>
+      <audio controls>
+        <source src="Luna - The Smashing Pumpkins.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="song">
+      <img src="https://i.pinimg.com/736x/9f/34/17/9f3417e374467d255b1ac63be3caa990.jpg" alt="">
+      <h5>What Once Was - Her's</h5>
+      <audio controls>
+        <source src="Her's - What Once Was.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="song">
+      <img src="https://i.pinimg.com/736x/0d/98/62/0d986223d4f6f2387ec3dca61db5b004.jpg" alt="">
+      <h5>I'm Not In Love - 10cc</h5>
+      <audio controls>
+        <source src="I'm Not In Love - 10cc.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="song">
+      <img src="https://i.pinimg.com/736x/02/5d/73/025d73306987c0f857e7ffe071f85e76.jpg" alt="">
+      <h5>Nangs - Tame Impala</h5>
+      <audio controls>
+        <source src="Tame Impala - Nangs (Audio).mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="song">
+      <img src="https://i.pinimg.com/736x/ba/41/16/ba4116023bc07b8df56c9b312ec81fc2.jpg" alt="">
+      <h5>Something - The Beatles</h5>
+      <audio controls>
+        <source src="The Beatles - Something.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="song">
+      <img src="https://i.pinimg.com/1200x/a9/e8/c6/a9e8c6b6f70bb41b826167d7c591086b.jpg" alt="">
+      <h5>High and Dry - Radiohead</h5>
+      <audio controls>
+        <source src="Radiohead - High and Dry.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</section>
+
+
+  <section class="gap">
+      <h2 class="gap-text">Movies I Love</h2>
+    </section>
+
+<section class="movie-section" id="movie">
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="https://i.pinimg.com/1200x/17/c0/7a/17c07aae0938585cdf401580027cc4c4.jpg" alt="">
+      <h3>Stand by Me</h3>
+    </div>
+    <div class="movie">
+      <img src="https://i.pinimg.com/736x/05/69/2f/05692f37f26017f9d3ae30f40debb525.jpg" alt="">
+      <h3>Aftersun</h3>
+    </div>
+    <div class="movie">
+      <img src="https://i.pinimg.com/1200x/02/6b/0d/026b0d4dab1abe1c5f4460d6a45ae2ab.jpg" alt="">
+      <h3>Forrest Gump</h3>
+    </div>
+    <div class="movie">
+      <img src="https://i.pinimg.com/736x/d8/9e/b0/d89eb04d03c62acb1d463d50db4560ce.jpg" alt="">
+      <h3>Fight Club</h3>
+    </div>
+  </div>
+</section>
+
+  <section class="gap">
+      <h2 class="gap-text"></h2>
+    </section>
+
+
+<section class="socials" id="socials">
+  <h2>Find Me Online</h2>
+  <p>Let’s stay connected through the things i love </p>
+  
+  <div class="social-links">
+    <a href="https://instagram.com/hanjeas" target="_blank" class="social-icon instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://letterboxd.com/haellevator" target="_blank" class="social-icon letterboxd">
+      <img src="https://static.wikia.nocookie.net/film-and-television/images/a/a0/Unnamed.png/revision/latest/scale-to-width-down/512?cb=20221129103323" alt="Letterboxd">
+    </a>
+    <a href="https://open.spotify.com/user/elunolia" target="_blank" class="social-icon spotify">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify">
+    </a>
+  </div>
+</section>
+
+
+
+    <footer>
+        <p>Copyright &copy; Olivia Agatha | Made with ❤️ </p>
+    </footer>
+
+    <!-- ====================== JS ====================== -->
+  <script>
+    // Audio hanya bisa 1 yang play
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => {
+      audio.addEventListener("play", () => {
+        audios.forEach(other => {
+          if (other !== audio) other.pause();
+        });
+      });
+    });
+
+    // Fade-in saat scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('section, .galeri, .last').forEach((el) => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+
+    // ====================== POPUP IMAGE ======================
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementsByClassName("close")[0];
+    const images = document.querySelectorAll(".galeri img");
+
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    }
+
+    modal.onclick = (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    }
+  </script>
+</script>
+
+    <div id="modal-alert"
+     class="modal-backdrop hidden">
+        <div class="modal-content">
+            <p>Welcome to My Page</p>
+            <button id="tombol-tutup">Close</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({
+          top: target.offsetTop - 80, // biar gak ketutup navbar
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Highlight active section on scroll
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let scrollY = window.pageYOffset + 100;
+
+    sections.forEach(sec => {
+      const sectionTop = sec.offsetTop;
+      const sectionHeight = sec.offsetHeight;
+      const sectionId = sec.getAttribute("id");
+
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + sectionId) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  });
+</script>
+
+</html>
